@@ -146,16 +146,21 @@ var index_config_default = {
   pans: {
     list: []
   },
+  danmuBuiltin: {
+    enabled: true,
+    host: "127.0.0.1",
+    port: 9321,
+    token: "87654321",
+    autoStart: true
+  },
   danmu: {
     urls: [
-      { address: "http://ecs.dysobo.cn:9321/87654321", name: "默认1" },
-      { address: "https://fjj0417.dpdns.org/87654321", name: "默认2" },
-      { address: "http://47.107.188.112:6008/87654321", name: "默认3" },
-      { address: "https://dmapi.8188911.xyz/87654321", name: "默认4" },
-      { address: "https://danmu.bona1984.com:99/87654321", name: "默认5" }
+      { address: "http://127.0.0.1:9321/87654321", name: "内置" },
+      { address: "http://47.107.188.112:6008/87654321", name: "公益1" },
+      { address: "http://ecs.dysobo.cn:9321/87654321", name: "公益2" }
     ],
     autoPush: true,
-    autoPushBlacklist: ["bili_all", "fanqie", "liuyueting", "88kanqiu", "live"]
+    autoPushBlacklist: ["aishangtingshu", "aiting_music", "tingleme", "tingyou", "bili_all", "88kanqiu", "douyu", "fengye_music", "douyinlive", "HuyaLive", "live"]
   },
   t4: {
     list: []
